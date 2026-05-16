@@ -321,7 +321,7 @@ function runCmd(){
 }
 
 /* ── AI GEMINI (key hardcoded) ── */
-const _ak = ["AIzaSyBgTUl2uVf6WCGjbq2GnHXnvLkI4k5U49E"].join("");
+const _ak = ["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"].join("");
 const geminiHist = [];
 
 function aiPrint(html){
@@ -347,7 +347,7 @@ async function sendAI(){
   c.scrollTop=c.scrollHeight;
   try{
     const res=await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${_ak}`,
+      `https://api.x.ai/v1/chat/completions?key=${_ak}`,
       {
         method:"POST",
         headers:{"Content-Type":"application/json"},
